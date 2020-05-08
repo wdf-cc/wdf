@@ -1,0 +1,390 @@
+/*
+var FSCData = [
+    {
+        questionKeyword:"",
+        questionContent:"",
+        answers:[
+            {
+                answerContent:"像我一样",
+                score:0,
+            },
+            {
+                answerContent:"非常像我",
+                score:0,
+            },
+            {
+                answerContent:"有些像我",
+                score:0,
+            },
+            {
+                answerContent:"不太像我",
+                score:0,
+            },
+            {
+                answerContent:"毫不像我",
+                score:0,
+            }
+        ],
+        totalScore:0
+    }
+]
+*/
+
+
+var FSCData = [
+    {
+        id:"fsc0",
+        questionKeyword:"专注力测试",
+        questionContent:"1、我通常能够长时间地，专注地做一件事",
+        answers:[
+            {
+                answerContent:"像我一样",
+                isActive:false,
+                score:5
+            },
+            {
+                answerContent:"非常像我",
+                isActive:false,
+                score:4
+            },
+            {
+                answerContent:"有些像我",
+                isActive:false,
+                score:3
+            },
+            {
+                answerContent:"不太像我",
+                isActive:false,
+                score:2
+            },
+            {
+                answerContent:"毫不像我",
+                isActive:false,
+                score:1
+            }
+        ],
+        score:0
+    },
+    {
+        id:"fsc1",
+        questionKeyword:"专注力测试",
+        questionContent:"2、我很容易分心",
+        answers:[
+            {
+                answerContent:"像我一样",
+                isActive:false,
+                score:1
+            },
+            {
+                answerContent:"非常像我",
+                isActive:false,
+                score:2
+            },
+            {
+                answerContent:"有些像我",
+                isActive:false,
+                score:3
+            },
+            {
+                answerContent:"不太像我",
+                isActive:false,
+                score:4
+            },
+            {
+                answerContent:"毫不像我",
+                isActive:false,
+                score:5
+            }
+        ],
+        score:0
+    },{
+        id:"fsc2",
+        questionKeyword:"专注力测试",
+        questionContent:"3、我很难专注于一件事",
+        answers:[
+            {
+                answerContent:"像我一样",
+                isActive:false,
+                score:1
+            },
+            {
+                answerContent:"非常像我",
+                isActive:false,
+                score:2
+            },
+            {
+                answerContent:"有些像我",
+                isActive:false,
+                score:3
+            },
+            {
+                answerContent:"不太像我",
+                isActive:false,
+                score:4
+            },
+            {
+                answerContent:"毫不像我",
+                isActive:false,
+                score:5
+            }
+        ],
+        score:0
+    },
+    {
+        id:"fsc3",
+        questionKeyword:"专注力测试",
+        questionContent:"4、对有重要的学习能保持集中的注意力",
+        answers:[
+            {
+                answerContent:"像我一样",
+                isActive:false,
+                score:5
+            },
+            {
+                answerContent:"非常像我",
+                isActive:false,
+                score:4
+            },
+            {
+                answerContent:"有些像我",
+                isActive:false,
+                score:3
+            },
+            {
+                answerContent:"不太像我",
+                isActive:false,
+                score:2
+            },
+            {
+                answerContent:"毫不像我",
+                isActive:false,
+                score:1
+            }
+        ],
+        score:0
+    },
+    {
+        id:"fsc4",
+        questionKeyword:"自控力测试",
+        questionContent:"1、即使在吵闹的环境中，我仍然可以把注意力放在我的课本上。",
+        answers:[
+            {
+                answerContent:"像我一样",
+                isActive:false,
+                score:5
+            },
+            {
+                answerContent:"非常像我",
+                isActive:false,
+                score:4
+            },
+            {
+                answerContent:"有些像我",
+                isActive:false,
+                score:3
+            },
+            {
+                answerContent:"不太像我",
+                isActive:false,
+                score:2
+            },
+            {
+                answerContent:"毫不像我",
+                isActive:false,
+                score:1
+            }
+        ],
+        score:0
+    },
+    {
+        id:"fsc5",
+        questionKeyword:"自控力测试",
+        questionContent:"2、正在做作业，朋友们喊我出去玩，我匆忙赶完作业飞奔而去。",
+        answers:[
+            {
+                answerContent:"像我一样",
+                isActive:false,
+                score:1
+            },
+            {
+                answerContent:"非常像我",
+                isActive:false,
+                score:2
+            },
+            {
+                answerContent:"有些像我",
+                isActive:false,
+                score:3
+            },
+            {
+                answerContent:"不太像我",
+                isActive:false,
+                score:4
+            },
+            {
+                answerContent:"毫不像我",
+                isActive:false,
+                score:5
+            }
+        ],
+        score:0
+    },
+    {
+        id:"fsc6",
+        questionKeyword:"自控力测试",
+        questionContent:"3、我经常想到什么就说什么，即使那些话可能会伤害别人",
+        answers:[
+            {
+                answerContent:"像我一样",
+                isActive:false,
+                score:1
+            },
+            {
+                answerContent:"非常像我",
+                isActive:false,
+                score:2
+            },
+            {
+                answerContent:"有些像我",
+                isActive:false,
+                score:3
+            },
+            {
+                answerContent:"不太像我",
+                isActive:false,
+                score:4
+            },
+            {
+                answerContent:"毫不像我",
+                isActive:false,
+                score:5
+            }
+        ],
+        score:0
+    },
+    {
+        id:"fsc7",
+        questionKeyword:"自控力测试",
+        questionContent:"4、即使我想减肥，别人吃甜点时，我通常会吃一块",
+        answers:[
+            {
+                answerContent:"像我一样",
+                isActive:false,
+                score:1
+            },
+            {
+                answerContent:"非常像我",
+                isActive:false,
+                score:2
+            },
+            {
+                answerContent:"有些像我",
+                isActive:false,
+                score:3
+            },
+            {
+                answerContent:"不太像我",
+                isActive:false,
+                score:4
+            },
+            {
+                answerContent:"毫不像我",
+                isActive:false,
+                score:5
+            }
+        ],
+        score:0
+    },
+    {
+        id:"fsc8",
+        questionKeyword:"自控力测试",
+        questionContent:"5、即使不能马上成功，即使很想放弃，我也能坚持做我该做的事",
+        answers:[
+            {
+                answerContent:"像我一样",
+                isActive:false,
+                score:5
+            },
+            {
+                answerContent:"非常像我",
+                isActive:false,
+                score:4
+            },
+            {
+                answerContent:"有些像我",
+                isActive:false,
+                score:3
+            },
+            {
+                answerContent:"不太像我",
+                isActive:false,
+                score:2
+            },
+            {
+                answerContent:"毫不像我",
+                isActive:false,
+                score:1
+            }
+        ],
+        score:0
+    }
+]
+
+
+
+export default class FSC{
+    constructor(){
+        this.topic = FSCData;
+        this.result = [
+            {
+                questionKeyword:"专注力测试",
+                totalScore:0,
+                evaluation:"" 
+            },
+            {
+                questionKeyword:"自控力测试",
+                totalScore:0,
+                evaluation:"" 
+            }
+        ]
+    }
+
+    getResult(){
+        const TOTAL0 = 20;  //专注力测试模块的总分
+        const TOTAL1 = 25;  //自控力测试模块的总分
+
+        this.topic.forEach(v=>{
+            if(v.questionKeyword==="专注力测试"){
+                this.result[0].totalScore+=v.score;
+            }else if(v.questionKeyword==="自控力测试"){
+                this.result[1].totalScore+=v.score;
+            }
+        })
+
+        let totalScore0 = this.result[0].totalScore;  //专注力测试的总分
+        let totalScore1 = this.result[1].totalScore;  //自控力测试的总分
+
+
+        if(totalScore0<=8){
+            this.result[0].evaluation = "你的专注力已经影响你的学习，需要专项训练";
+        }else if(totalScore0>=9&&totalScore0<=14){
+            this.result[0].evaluation = "你的专注力中等，感兴趣的事情容易掌握。需要提升训练";
+        }else if(totalScore0>=15&&totalScore0<=20){
+            this.result[0].evaluation = "你的专注力很高，对于知识的掌握很容易获取";
+        }
+
+        if(totalScore1<=10){
+            this.result[1].evaluation = "你的自控力很弱，需要家长和老师的协助才能完成任务，需要专项训练";
+        }else if(totalScore1>=11&&totalScore1<=17){
+            this.result[1].evaluation = "你的自控力中等，容易受环境的影响，需要提升训练";
+        }else if(totalScore1>=18&&totalScore1<=25){
+            this.result[1].evaluation = "你的自控力很好，总是能按照自己制定的目标执行";
+        }
+
+        this.result[0].totalScore = Math.floor((totalScore0 / TOTAL0)*100);
+        this.result[1].totalScore = Math.floor((totalScore1 / TOTAL1)*100);
+
+        return this.result;
+    }
+}
+
