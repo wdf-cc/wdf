@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route,BrowserRouter as Router} from 'react-router-dom';
+import {Route,HashRouter as Router} from 'react-router-dom';
 import Layout from './Layout';
 import Home from './pages/Home/';
 import './App.css';
@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <Layout>
-        <Router>
+        <Router hashType="hashbang" >
            <Route path='/home' component={Home} />
            <Route path='/tts' component={TextToSound} />
         </Router>
