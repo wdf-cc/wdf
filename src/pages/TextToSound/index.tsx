@@ -52,7 +52,7 @@ export default class TextToSound extends Component<TextToSoundProps, TextToSound
 
     render() {
         return (
-            <Container>
+            <div>
                 <Row>
                     <Col md={{span:6,offset:3}} xs={12}>
                         <h4>TTS应用</h4>
@@ -81,7 +81,7 @@ export default class TextToSound extends Component<TextToSoundProps, TextToSound
                         </Button>
                     </Col>
                 </Row>
-            </Container>
+            </div>
         );
     }
 }

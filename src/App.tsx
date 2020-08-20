@@ -6,6 +6,7 @@ import './App.css';
 import TextToSound from './pages/TextToSound';
 import { Container, Row, Col } from 'react-bootstrap';
 import Bindppt from './pages/Bindppt';
+import PlayVideo from './pages/PlayVideo';
 
 export default class App extends Component {
 
@@ -16,6 +17,7 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
+        <Container>
           <Row>
             <Col md={{ span: 6, offset: 3 }} xs={12} >
               <Router hashType="hashbang">
@@ -29,11 +31,13 @@ export default class App extends Component {
               <hr />
             </Col>
           </Row>
+         </Container>
         <Layout>
           <Router hashType="hashbang" >
             <Route path='/home' component={Home} />
             <Route path='/tts' component={TextToSound} />
             <Route path='/bindppt' component={Bindppt} />
+            <Route path='/playvideo' component={PlayVideo} />
             <Redirect from="/" to="/home" />
           </Router>
         </Layout>
